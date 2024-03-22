@@ -1,0 +1,282 @@
+{
+  "resolvedId": "/Users/kianakaslana/Code/WEB/My/navigation-nuxt/src/pages/index.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <h1>欢迎来到主页</h1>\n    <AppAlert>\n      这是一个自动导入的组件\n    </AppAlert>\n  </div>\n</template>",
+      "start": 1711090865199,
+      "end": 1711090865248,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711090865248,
+      "end": 1711090865248,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createTextVNode as _createTextVNode } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  const _component_AppAlert = _resolveComponent(\"AppAlert\")\n\n  _push(`<div${_ssrRenderAttrs(_attrs)}><h1>欢迎来到主页</h1>`)\n  _push(_ssrRenderComponent(_component_AppAlert, null, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(` 这是一个自动导入的组件 `)\n      } else {\n        return [\n          _createTextVNode(\" 这是一个自动导入的组件 \")\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"pages/index.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1711090865248,
+      "end": 1711090865249,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/kianakaslana/Code/WEB/My/navigation-nuxt/src/pages/index.vue"
+        ],
+        "names": [],
+        "mappings": ";;;;;;EAAA,aAAA,gBAAA;EAAA,MAAA;IAAA,kBAGI,CAEW;UALf;QAAA;;;UAAA,iBAGc,eAEV;;;;IALJ,GAAA;;EAAA",
+        "sourcesContent": [
+          "<template>\n  <div>\n    <h1>欢迎来到主页</h1>\n    <AppAlert>\n      这是一个自动导入的组件\n    </AppAlert>\n  </div>\n</template>"
+        ]
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711090865249,
+      "end": 1711090865249,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711090865249,
+      "end": 1711090865250,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711090865249,
+      "end": 1711090865250,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711090865250,
+      "end": 1711090865250,
+      "order": "normal"
+    }
+  ]
+}

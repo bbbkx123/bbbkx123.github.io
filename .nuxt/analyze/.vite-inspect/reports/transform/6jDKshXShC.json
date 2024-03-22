@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/Users/kianakaslana/Code/WEB/My/navigation-nuxt/src/app.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <header class=\"header flex\">\n    <nav class=\"flex\">\n      <NuxtLink class=\"navigation-link\" to=\"/tools\">工具</NuxtLink>\n        <!-- <li><NuxtLink to=\"/posts/1\">Post 1</NuxtLink></li>\n        <li><NuxtLink to=\"/posts/2\">Post 2</NuxtLink></li> -->\n    </nav>\n    <!-- <router-link  to=\"tools\">工具</router-link>\n    <router-link class=\"navigation-link\" to=\"notes\">文档</router-link>\n    <router-link class=\"navigation-link\" to=\"games\">游戏</router-link>\n    <router-link class=\"navigation-link\" to=\"relax\">摸鱼</router-link>\n    <router-link class=\"navigation-link\" to=\"demos\">样例</router-link> -->\n    <!-- <router-link class=\"navigation-link navigation-link-pc\" to=\"links\">友链</router-link> -->\n  </header>\n  <main class=\"content\">\n    <!-- <router-view v-slot=\"{ Component, route }\">\n      <keep-alive>\n        <component :is=\"Component\" :key=\"route.name\" />\n      </keep-alive>\n    </router-view> -->\n    <NuxtPage></NuxtPage>\n  </main>\n\n  <footer>\n    <div class=\"site-links\">\n      <a href=\"https://gitee.com/web-abin/abin-web\" target=\"_blank\">源码链接</a>、\n      <a href=\"https://github.com/web-abin\" target=\"_blank\">GitHub主页</a>、\n      <a href=\"https://juejin.cn/user/994399097982728\" target=\"_blank\">掘金主页</a>、\n      <a href=\"https://blog.csdn.net/qq_38974163?type=blog\" target=\"_blank\">CSDN主页</a>、\n      <a href=\"http://web-abin.gitee.io/blog\" target=\"_blank\">个人博客</a>、\n      <a href=\"http://web-abin.gitee.io/blog\" target=\"_blank\">\n        <!-- <router-link to=\"links\">友情链接</router-link> -->\n      </a>\n    </div>\n    \n    <div class=\"site-data\">\n      <span>建站第<span style=\"color: #1e80ff\">{{ siteCreateDays }}</span>天</span>&nbsp;|&nbsp;\n      <span id=\"busuanzi_container_site_pv\">浏览量<span id=\"busuanzi_value_site_pv\" style=\"color: #1e80ff\">{{ siteData.site_pv }}</span></span>&nbsp;|&nbsp;\n      <span id=\"busuanzi_container_site_uv\">访客数<span id=\"busuanzi_value_site_uv\" style=\"color: #1e80ff\">{{ siteData.site_uv }}</span></span>\n    </div>\n  </footer>\n</template>\n\n<script setup>\nimport { reactive,ref } from \"vue\"\n\nlet siteData = reactive({\n  site_pv: 0,\n  site_uv: 0,\n})\n// if (localStorage.getItem('ABIN_SITE_DATA')){\n//   siteData = localStorage.getItem('ABIN_SITE_DATA')\n// }\nconst siteCreateDays = function () {\n  return Math.floor( (Date.now() - new Date('2023-05-28').getTime())/(1000*60*60*24))\n}()\n</script>\n\n<style scoped lang=\"scss\">\n\n.header {\n  display: flex;\n  justify-content: center;\n  position: fixed;\n  left: 0;\n  top: 0;\n  z-index: 99;\n  width: 100%;\n  height: $--header-height;\n  padding: 0 $--padding-side;\n  justify-content: center;\n  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);\n  background-color: $--color-header;\n\n\n  .navigation-link {\n    position: relative;\n    display: flex;\n    padding: 12px 18px;\n    flex-direction: row;\n    align-items: center;\n    flex: 0 0 auto;\n    transition: color 200ms ease;\n    color: #546681;\n    font-size: 16px;\n    text-decoration: none;\n\n    &:hover {\n      color: #333333;\n    }\n\n    &:hover::before {\n      content: \"\";\n      position: absolute;\n      top: auto;\n      right: 0;\n      bottom: 0;\n      left: 1rem;\n      height: 2px;\n      background-color: #1e80ff;\n      width: calc(100% - 2rem);\n    }\n  }\n\n  .router-link-active {\n    color: $--color-menu-active;\n    font-weight: bold;\n  }\n}\n\n.content {\n  width: 100%;\n  height: fit-content;\n  padding-top: calc($--header-height + 20px);\n  padding-bottom: 40px;\n  padding-left: $--padding-side;\n  padding-right: $--padding-side;\n  background: $--color-body;\n}\n\nfooter {\n  position: relative;\n  width: 100%;\n  padding: 10px 0;\n  background: #fff;\n  border-top: 1px solid $--color-border;\n  .site-links{\n    display: flex;\n    justify-content: center;\n    a {\n      line-height: 25px;\n      font-size: 14px;\n    }\n  }\n  .site-data{\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    font-size: 14px;\n  }\n}\n\n@media (max-width: 480px) {\n  header {\n    bottom: 0;\n    top: unset !important;\n    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, .05);\n  }\n\n  .content {\n    padding-top: 20px;\n    padding-bottom: calc($--header-height + 20px);\n\n    &::-webkit-scrollbar {\n      display: none;\n    }\n  }\n\n  footer {\n    display: none;\n  }\n}\n@media (max-width: 480px) {\n  .navigation-link-pc{\n    display: none !important;\n  }\n}\n\n</style>\n",
+      "start": 1711090864258,
+      "end": 1711090864303,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711090864303,
+      "end": 1711090864303,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711090864303,
+      "end": 1711090864303,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711090864303,
+      "end": 1711090864303,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711090864303,
+      "end": 1711090864303,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711090864303,
+      "end": 1711090864303,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711090864303,
+      "end": 1711090864303,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711090864303,
+      "end": 1711090864303,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, toDisplayString as _toDisplayString, createStaticVNode as _createStaticVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-8c19f87d\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"header flex\" }\nconst _hoisted_2 = { class: \"flex\" }\nconst _hoisted_3 = { class: \"content\" }\nconst _hoisted_4 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"site-links\\\" data-v-8c19f87d><a href=\\\"https://gitee.com/web-abin/abin-web\\\" target=\\\"_blank\\\" data-v-8c19f87d>源码链接</a>、 <a href=\\\"https://github.com/web-abin\\\" target=\\\"_blank\\\" data-v-8c19f87d>GitHub主页</a>、 <a href=\\\"https://juejin.cn/user/994399097982728\\\" target=\\\"_blank\\\" data-v-8c19f87d>掘金主页</a>、 <a href=\\\"https://blog.csdn.net/qq_38974163?type=blog\\\" target=\\\"_blank\\\" data-v-8c19f87d>CSDN主页</a>、 <a href=\\\"http://web-abin.gitee.io/blog\\\" target=\\\"_blank\\\" data-v-8c19f87d>个人博客</a>、 <a href=\\\"http://web-abin.gitee.io/blog\\\" target=\\\"_blank\\\" data-v-8c19f87d></a></div>\", 1)\nconst _hoisted_5 = { class: \"site-data\" }\nconst _hoisted_6 = { style: {\"color\":\"#1e80ff\"} }\nconst _hoisted_7 = { id: \"busuanzi_container_site_pv\" }\nconst _hoisted_8 = {\n  id: \"busuanzi_value_site_pv\",\n  style: {\"color\":\"#1e80ff\"}\n}\nconst _hoisted_9 = { id: \"busuanzi_container_site_uv\" }\nconst _hoisted_10 = {\n  id: \"busuanzi_value_site_uv\",\n  style: {\"color\":\"#1e80ff\"}\n}\n\nimport { reactive,ref } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'app',\n  setup(__props) {\n\nlet siteData = reactive({\n  site_pv: 0,\n  site_uv: 0,\n})\n// if (localStorage.getItem('ABIN_SITE_DATA')){\n//   siteData = localStorage.getItem('ABIN_SITE_DATA')\n// }\nconst siteCreateDays = function () {\n  return Math.floor( (Date.now() - new Date('2023-05-28').getTime())/(1000*60*60*24))\n}()\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n  const _component_NuxtPage = _resolveComponent(\"NuxtPage\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _createElementVNode(\"header\", _hoisted_1, [\n      _createElementVNode(\"nav\", _hoisted_2, [\n        _createVNode(_component_NuxtLink, {\n          class: \"navigation-link\",\n          to: \"/tools\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\"工具\")\n          ]),\n          _: 1\n        })\n      ])\n    ]),\n    _createElementVNode(\"main\", _hoisted_3, [\n      _createVNode(_component_NuxtPage)\n    ]),\n    _createElementVNode(\"footer\", null, [\n      _hoisted_4,\n      _createElementVNode(\"div\", _hoisted_5, [\n        _createElementVNode(\"span\", null, [\n          _createTextVNode(\"建站第\"),\n          _createElementVNode(\"span\", _hoisted_6, _toDisplayString(_unref(siteCreateDays)), 1),\n          _createTextVNode(\"天\")\n        ]),\n        _createTextVNode(\" |  \"),\n        _createElementVNode(\"span\", _hoisted_7, [\n          _createTextVNode(\"浏览量\"),\n          _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(siteData).site_pv), 1)\n        ]),\n        _createTextVNode(\" |  \"),\n        _createElementVNode(\"span\", _hoisted_9, [\n          _createTextVNode(\"访客数\"),\n          _createElementVNode(\"span\", _hoisted_10, _toDisplayString(_unref(siteData).site_uv), 1)\n        ])\n      ])\n    ])\n  ], 64))\n}\n}\n\n}\n\n\nimport \"/Users/kianakaslana/Code/WEB/My/navigation-nuxt/src/app.vue?vue&type=style&index=0&scoped=8c19f87d&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-8c19f87d\"]])",
+      "start": 1711090864303,
+      "end": 1711090864308,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711090864308,
+      "end": 1711090864308,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711090864308,
+      "end": 1711090864309,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711090864309,
+      "end": 1711090864309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1711090864309,
+      "end": 1711090864309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711090864309,
+      "end": 1711090864309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1711090864309,
+      "end": 1711090864309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_1 } from \"/Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/nuxt/dist/pages/runtime/page\";\nimport { createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createElementVNode as _createElementVNode, unref as _unref, toDisplayString as _toDisplayString, createStaticVNode as _createStaticVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-8c19f87d\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"header flex\" }\nconst _hoisted_2 = { class: \"flex\" }\nconst _hoisted_3 = { class: \"content\" }\nconst _hoisted_4 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"site-links\\\" data-v-8c19f87d><a href=\\\"https://gitee.com/web-abin/abin-web\\\" target=\\\"_blank\\\" data-v-8c19f87d>源码链接</a>、 <a href=\\\"https://github.com/web-abin\\\" target=\\\"_blank\\\" data-v-8c19f87d>GitHub主页</a>、 <a href=\\\"https://juejin.cn/user/994399097982728\\\" target=\\\"_blank\\\" data-v-8c19f87d>掘金主页</a>、 <a href=\\\"https://blog.csdn.net/qq_38974163?type=blog\\\" target=\\\"_blank\\\" data-v-8c19f87d>CSDN主页</a>、 <a href=\\\"http://web-abin.gitee.io/blog\\\" target=\\\"_blank\\\" data-v-8c19f87d>个人博客</a>、 <a href=\\\"http://web-abin.gitee.io/blog\\\" target=\\\"_blank\\\" data-v-8c19f87d></a></div>\", 1)\nconst _hoisted_5 = { class: \"site-data\" }\nconst _hoisted_6 = { style: {\"color\":\"#1e80ff\"} }\nconst _hoisted_7 = { id: \"busuanzi_container_site_pv\" }\nconst _hoisted_8 = {\n  id: \"busuanzi_value_site_pv\",\n  style: {\"color\":\"#1e80ff\"}\n}\nconst _hoisted_9 = { id: \"busuanzi_container_site_uv\" }\nconst _hoisted_10 = {\n  id: \"busuanzi_value_site_uv\",\n  style: {\"color\":\"#1e80ff\"}\n}\n\nimport { reactive,ref } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'app',\n  setup(__props) {\n\nlet siteData = reactive({\n  site_pv: 0,\n  site_uv: 0,\n})\n// if (localStorage.getItem('ABIN_SITE_DATA')){\n//   siteData = localStorage.getItem('ABIN_SITE_DATA')\n// }\nconst siteCreateDays = function () {\n  return Math.floor( (Date.now() - new Date('2023-05-28').getTime())/(1000*60*60*24))\n}()\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = __nuxt_component_0\n  const _component_NuxtPage = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _createElementVNode(\"header\", _hoisted_1, [\n      _createElementVNode(\"nav\", _hoisted_2, [\n        _createVNode(_component_NuxtLink, {\n          class: \"navigation-link\",\n          to: \"/tools\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\"工具\")\n          ]),\n          _: 1\n        })\n      ])\n    ]),\n    _createElementVNode(\"main\", _hoisted_3, [\n      _createVNode(_component_NuxtPage)\n    ]),\n    _createElementVNode(\"footer\", null, [\n      _hoisted_4,\n      _createElementVNode(\"div\", _hoisted_5, [\n        _createElementVNode(\"span\", null, [\n          _createTextVNode(\"建站第\"),\n          _createElementVNode(\"span\", _hoisted_6, _toDisplayString(_unref(siteCreateDays)), 1),\n          _createTextVNode(\"天\")\n        ]),\n        _createTextVNode(\" |  \"),\n        _createElementVNode(\"span\", _hoisted_7, [\n          _createTextVNode(\"浏览量\"),\n          _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(siteData).site_pv), 1)\n        ]),\n        _createTextVNode(\" |  \"),\n        _createElementVNode(\"span\", _hoisted_9, [\n          _createTextVNode(\"访客数\"),\n          _createElementVNode(\"span\", _hoisted_10, _toDisplayString(_unref(siteData).site_uv), 1)\n        ])\n      ])\n    ])\n  ], 64))\n}\n}\n\n}\n\n\nimport \"/Users/kianakaslana/Code/WEB/My/navigation-nuxt/src/app.vue?vue&type=style&index=0&scoped=8c19f87d&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-8c19f87d\"]])",
+      "start": 1711090864309,
+      "end": 1711090864309,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711090864309,
+      "end": 1711090864310,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711090864310,
+      "end": 1711090864310,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711090864310,
+      "end": 1711090864310,
+      "order": "normal"
+    }
+  ]
+}

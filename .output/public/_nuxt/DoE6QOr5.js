@@ -1,0 +1,1 @@
+import{_ as t,c as o,b as n,w as a,a as c,q as s,o as r,d as l}from"./Caurx7RX.js";const _={},d=c("h1",null,"欢迎来到主页",-1);function p(f,i){const e=s("AppAlert");return r(),o("div",null,[d,n(e,null,{default:a(()=>[l(" 这是一个自动导入的组件 ")]),_:1})])}const m=t(_,[["render",p]]);export{m as default};

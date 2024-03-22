@@ -1,0 +1,214 @@
+{
+  "resolvedId": "/Users/kianakaslana/Code/WEB/My/navigation-nuxt/src/pages/404.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!-- pages/404.vue -->\n<template>\n  <div class=\"error-404\">\n    <h1>404 - 页面未找到</h1>\n    <p>抱歉，我们找不到您请求的页面。</p>\n    <!-- 其他内容，如返回首页的链接 -->\n    <router-link to=\"/\">返回首页</router-link>\n  </div>\n</template>\n\n<script>\nexport default {\n  // 页面组件的脚本部分\n};\n</script>\n\n<style scoped>\n/* 你的 404 页面的样式 */\n</style>",
+      "start": 1711090864285,
+      "end": 1711090864331,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  // 页面组件的脚本部分\n};\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-1f3d6d73\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"error-404\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h1\", null, \"404 - 页面未找到\", -1))\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", null, \"抱歉，我们找不到您请求的页面。\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_router_link = _resolveComponent(\"router-link\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _hoisted_3,\n    _createVNode(_component_router_link, { to: \"/\" }, {\n      default: _withCtx(() => [\n        _createTextVNode(\"返回首页\")\n      ]),\n      _: 1\n    })\n  ]))\n}\n\nimport \"/Users/kianakaslana/Code/WEB/My/navigation-nuxt/src/pages/404.vue?vue&type=style&index=0&scoped=1f3d6d73&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-1f3d6d73\"]])",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711090864331,
+      "end": 1711090864331,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711090864332,
+      "end": 1711090864332,
+      "order": "normal"
+    }
+  ]
+}
