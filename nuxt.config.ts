@@ -23,4 +23,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    buildAssetsDir: 'static',   //修改站点资产的文件夹名称，默认是_nuxt
+  } 
 });
