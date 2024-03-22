@@ -1,10 +1,10 @@
 import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/h3/dist/index.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, getResponseStatusText } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/h3/dist/index.mjs';
 import { stringify, uneval } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/devalue/index.js';
-import { joinURL, withoutTrailingSlash } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/vue/server-renderer/index.mjs';
 import { renderSSRHead } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/@unhead/ssr/dist/index.mjs';
 import { u as useNitroApp, a as useRuntimeConfig, b as useStorage, g as getRouteRules } from '../runtime.mjs';
+import { joinURL } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/ufo/dist/index.mjs';
 import { version, unref } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/vue/index.mjs';
 import { createServerHead as createServerHead$1 } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/unhead/dist/index.mjs';
 import { defineHeadPlugin } from 'file:///Users/kianakaslana/Code/WEB/My/navigation-nuxt/node_modules/@unhead/shared/dist/index.mjs';
@@ -260,8 +260,6 @@ const renderer = defineRenderHandler(async (event) => {
     },
     islandContext
   };
-  const _PAYLOAD_EXTRACTION = !ssrContext.noSSR && !isRenderingIsland;
-  const payloadURL = _PAYLOAD_EXTRACTION ? joinURL(ssrContext.runtimeConfig.app.baseURL, url, "_payload.json" ) : void 0;
   {
     ssrContext.payload.prerenderedAt = Date.now();
   }
@@ -293,20 +291,9 @@ const renderer = defineRenderHandler(async (event) => {
     }
     return response2;
   }
-  if (_PAYLOAD_EXTRACTION) {
-    appendResponseHeader(event, "x-nitro-prerender", joinURL(url, "_payload.json" ));
-    await payloadCache.setItem(withoutTrailingSlash(url), renderPayloadResponse(ssrContext));
-  }
   const inlinedStyles = await renderInlineStyles(ssrContext.modules ?? []) ;
   const NO_SCRIPTS = routeOptions.experimentalNoScripts;
   const { styles, scripts } = getRequestDependencies(ssrContext, renderer.rendererContext);
-  if (_PAYLOAD_EXTRACTION && !isRenderingIsland) {
-    head.push({
-      link: [
-        { rel: "preload", as: "fetch", crossorigin: "anonymous", href: payloadURL } 
-      ]
-    }, headEntryOptions);
-  }
   head.push({ style: inlinedStyles });
   {
     const link = [];
@@ -326,7 +313,7 @@ const renderer = defineRenderHandler(async (event) => {
       link: getPrefetchLinks(ssrContext, renderer.rendererContext)
     }, headEntryOptions);
     head.push({
-      script: _PAYLOAD_EXTRACTION ? renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: splitPayload(ssrContext).initial, src: payloadURL })  : renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: ssrContext.payload }) 
+      script: renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: ssrContext.payload }) 
     }, {
       ...headEntryOptions,
       // this should come before another end of body scripts
