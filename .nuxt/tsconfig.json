@@ -75,7 +75,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/ea8ac3cd-8208-4dc4-92d8-5fbf01c0f4b3.json"
+        "./manifest/meta/9c63c067-ba4e-4306-9dcc-ecf29f732be4.json"
       ],
       "#build": [
         "."
@@ -117,7 +117,6 @@
   ],
   "exclude": [
     "../node_modules",
-    "../../../../../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
