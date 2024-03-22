@@ -1,0 +1,17 @@
+{
+  "resolvedId": "virtual:nuxt:/Users/kianakaslana/Code/WEB/My/navigation-nuxt/.nuxt/css.mjs",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "",
+      "start": 1711076655945,
+      "end": 1711076655945
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711076655945,
+      "end": 1711076655945,
+      "order": "normal"
+    }
+  ]
+}
